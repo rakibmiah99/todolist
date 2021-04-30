@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top right,#5BCEFE,#4285F2);
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.box{
+    borsder: 1px solid red;
+    width: 350px;
+    height: 500px;
+}
+.box .add{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.box .add:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.box .add input{
+    height: 25px;
+    border: none;
+    outline: none;
+}
+.box .add input[type=text]{
+    float: left;
+    width: 80%;
+    font-size: 18px;
+}
+.box .add input[type=button]{
+    float: right;
+    width: 20%;
+    background-color: #3C6FFB;
+    color: white;
+    
+}
+.box .add input[type=button]:hover{
+    background-color: #3d68db;
+    cursor: pointer;
+}
+.box .list{
+    background-color: white;
+    padding: 10px;
+    height: 350px;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: auto;
+}
+.box .list .items{
+    padding: 20px 10px;
+}
+.box .list .items .item{
+    border-bottom:1px solid #939393;
+    font-size: 18px;
+}
+.box .list .items .item{
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.box .list .items .item p{
+    margin-bottom: 9px;
+    margin-top: 15px;
+    float: left;
+    color: #939393;
+    text-transform: uppercase;
+}
+.box .list .items .item i{
+    margin-bottom: 9px;
+    margin-top: 15px;
+    float: right;
+    color: red;
+    cursor: pointer;
+}
